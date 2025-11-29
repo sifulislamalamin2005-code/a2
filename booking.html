@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book Online - 100SMILES</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+
+    <header>
+        <div class="container">
+            <h1>100SMILES Dental Care</h1>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="index.html#staff">Our Team</a></li>
+                    <li><a href="booking.html" class="active">Book Online</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main class="container section-padding">
+        <h2>Book Your Appointment</h2>
+        <p>Get a 25% discount when you book through this form! [cite: 158]</p>
+        
+        <form id="bookingForm" action="#" method="post">
+            <div class="form-group">
+                <label for="fullName">Full Name:</label>
+                <input type="text" id="fullName" name="fullName">
+                <span class="error" id="nameError"></span>
+            </div>
+
+            <div class="form-group">
+                <label for="email">Email Address:</label>
+                <input type="email" id="email" name="email">
+                <span class="error" id="emailError"></span>
+            </div>
+
+            <div class="form-group">
+                <label for="phone">Phone Number:</label>
+                <input type="tel" id="phone" name="phone">
+                <span class="error" id="phoneError"></span>
+            </div>
+
+            <div class="form-group">
+                <label for="date">Preferred Date:</label>
+                <input type="date" id="date" name="date">
+                <span class="error" id="dateError"></span>
+            </div>
+
+            <div class="form-group">
+                <label for="service">Reason for Visit:</label>
+                <select id="service" name="service">
+                    <option value="">-- Please Select --</option>
+                    <option value="checkup">Annual Check-up</option>
+                    <option value="cleaning">Cleaning</option>
+                    <option value="pain">Tooth Pain/Emergency</option>
+                    <option value="kids">Pediatric Visit</option>
+                    <option value="whitening">Whitening</option>
+                </select>
+                <span class="error" id="serviceError"></span>
+            </div>
+
+            <div class="form-group">
+                <label for="comments">Additional Comments:</label>
+                <textarea id="comments" name="comments" rows="4"></textarea>
+            </div>
+
+            <button type="submit" class="btn-primary">Submit Booking</button>
+        </form>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 100SMILES Dental Care</p>
+        </div>
+    </footer>
+
+</body>
+</html>
