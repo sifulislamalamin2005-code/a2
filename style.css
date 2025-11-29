@@ -1,0 +1,179 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    color: #333;
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: auto;
+    padding: 0 15px;
+}
+
+/* Header & Nav */
+header {
+    background-color: #0056b3;
+    color: white;
+    padding: 1rem 0;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 1.5rem;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 15px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.btn-nav {
+    background-color: #ff9800;
+    padding: 5px 10px;
+    border-radius: 4px;
+}
+
+/* Hero Section */
+.hero {
+    background-image: url('images/AdobeStock_370177584.jpeg'); /* Make sure this image exists */
+    background-size: cover;
+    background-position: center;
+    color: white;
+    text-align: center;
+    padding: 100px 20px;
+    background-blend-mode: darken;
+    background-color: rgba(0,0,0,0.5);
+}
+
+/* Layout Utilities */
+.section-padding {
+    padding: 40px 0;
+}
+
+.bg-light {
+    background-color: #f4f4f4;
+}
+
+.btn-primary {
+    display: inline-block;
+    background-color: #0056b3;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+}
+
+/* Grid Layout for Desktop */
+.grid-3 {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+/* Cards */
+.card, .staff-card {
+    background: white;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    text-align: center;
+}
+
+.staff-card img {
+    width: 100%;
+    max-width: 200px;
+    height: auto;
+    border-radius: 50%;
+    margin-bottom: 10px;
+}
+
+/* Form Styling */
+.form-group {
+    margin-bottom: 15px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+input, select, textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box; /* Ensures padding doesn't affect width */
+}
+
+.error {
+    color: red;
+    font-size: 0.8rem;
+    display: none;
+}
+
+/* Footer */
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+    margin-top: 40px;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+/* --- RESPONSIVE MEDIA QUERIES  --- */
+
+/* Tablet (Medium screens) */
+@media (max-width: 768px) {
+    .grid-3 {
+        grid-template-columns: repeat(2, 1fr); /* 2 Columns */
+    }
+    
+    header .container {
+        text-align: center;
+    }
+    
+    nav ul li {
+        display: block;
+        margin: 10px 0;
+    }
+}
+
+/* Mobile (Small screens) */
+@media (max-width: 480px) {
+    .grid-3 {
+        grid-template-columns: 1fr; /* 1 Column */
+    }
+
+    .footer-content {
+        flex-direction: column;
+    }
+
+    h1 {
+        font-size: 1.2rem;
+    }
+}
